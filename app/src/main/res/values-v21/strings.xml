@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="version_unknown">Unknown</string>
+    <string name="app_version">Version</string>
+    <string name="webview_loading">Load Content...</string>
+</resources>

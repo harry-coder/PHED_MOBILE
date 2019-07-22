@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PHEDMobile</string>
+    <string name="version_unknown">Unknown</string>
+    <string name="app_version">Version</string>
+    <string name="webview_loading">Load Content...</string>
+    <string name="txtusername">User name</string>
+    <string name="txtemail">Email</string>
+</resources>

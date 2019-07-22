@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorPrimaryLight">#1E88E5</color>
+    <color name="colorAccent">#1976D2</color>
+    <color name="colorAccentDark">#1976D2</color>
+    <color name="colorAccentLight">#1976D2</color>
+
+    <!--style 1-->
+    <color name="walkthrough1colorPrimary">#1976D2</color>
+    <color name="walkthrough1colorPrimaryDark">#b7194e</color>
+    <color name="walkthrough1colorAccent">#ea2064</color>
+    <color name="walkthrough1FontGray">#ababab</color>
+    <color name="button_magenta">#ea2064</color>
+    <color name="grey_40">#999999</color>
+    <color name="overlay_dark_30">#4D000000</color>
+    <color name="deep_orange_500">#FF5722</color>
+    <color name="button_orange">#fe5824</color>
+    <color name="button_white">@android:color/white</color>
+    <color name="button_blue">#40579b</color>
+    <color name="green_300">#81C784</color>
+    <color name="blue_grey_300">#90A4AE</color>
+    <color name="blue_grey_200">#B0BEC5</color>
+    <color name="blue_grey_800">#37474F</color>
+    <color name="blue_grey_400">#78909C</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_60">#666666</color>
+    <color name="orange_600">#FB8C00</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="grey_80">#37474F</color>
+    <color name="overlay_dark_50">#80000000</color>
+    <color name="overlay_light_30">#4DFFFFFF</color>
+    <color name="grey_95">#1a1a1a</color>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="overlay_light_90">#E6FFFFFF</color>
+    <color name="red_400">#EF5350</color>
+    <color name="red_300">#E57373</color>
+    <color name="blue_600">#1E88E5</color>
+</resources>

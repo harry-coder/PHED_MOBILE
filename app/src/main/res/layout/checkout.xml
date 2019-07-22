@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:mask="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center|start"
+        android:paddingStart="20dp"
+        android:text="Checkout"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_checkout"
+        android:background="#F1F8FA">
+
+        <TextView
+            android:id="@+id/tv_select"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+
+            android:gravity="center"
+            android:text="Select your payment option"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_select"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="15dp"
+
+                android:background="@drawable/card_background"
+                android:elevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/im_card"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/card_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="18sp"
+                        android:layout_below="@+id/im_card"
+                        android:gravity="center"
+                        android:text="Debit/Credit Card"
+                        android:textColor="#000"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/im_card2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/bank_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="18sp"
+                        android:layout_below="@+id/im_card2"
+                        android:gravity="center"
+                        android:text="Internet Banking"
+                        android:textColor="#000"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative1">
+
+        <TextView
+            android:id="@+id/tv_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="Card Number"
+            android:textColor="#B5B5B5"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_card"
+
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_cardNumber1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_background"
+                android:gravity="center"
+                android:maxLength="4"
+                android:inputType="number"
+                android:hint="1234" />
+
+            <EditText
+                android:id="@+id/et_cardNumber2"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="4"
+                android:background="@drawable/edittext_background"
+                android:gravity="center"
+                android:hint="4567" />
+
+            <EditText
+                android:id="@+id/et_cardNumber3"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="4"
+                android:background="@drawable/edittext_background"
+                android:gravity="center"
+                android:hint="9012" />
+
+            <EditText
+                android:id="@+id/et_cardNumber4"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="4"
+                android:background="@drawable/edittext_background"
+                android:gravity="center"
+                android:hint="4567" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Name on card"
+            android:textColor="#B5B5B5"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_holderName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Will Smith"
+            android:paddingStart="15dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_holderName"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_expiryDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Expiry Date"
+
+                    android:textColor="#B5B5B5"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_expiryDate"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_marginStart="20dp"
+                    android:inputType="date"
+
+                    android:maxLength="5"
+                    android:background="@drawable/edittext_background"
+                    android:hint="Expiry Date"
+                    android:paddingStart="15dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_cvv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="CVV"
+
+                    android:textColor="#B5B5B5"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_cvv"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:maxLength="3"
+             android:background="@drawable/edittext_background"
+                    android:inputType="numberPassword"
+                    android:hint="Enter CVV"
+                    android:paddingStart="15dp"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_chargeMoney"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_background"
+        android:text="Pay $350"
+        android:textColor="#fff"
+        android:textSize="23sp"
+
+        />
+
+</RelativeLayout>
